@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Preview the Aviators Market testimonial submission form. Demonstration only; no information is sent, saved or published.">
+  <meta property="og:title" content="Share Your Experience | Aviators Market Demo">
+  <meta property="og:description" content="A demonstration of the customer testimonial form, with review required before publication.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
+  <title>Share Your Experience | Aviators Market (Demo)</title>
+  <link rel="stylesheet" href="testimonial-submission.css">
+</head>
+<body class="amts-preview-body">
+
+<!-- PREVIEW-ONLY SWITCHER: exclude from Shopify integration -->
+<nav class="amts-preview-switcher" aria-label="Preview-only demo switcher">
+  <span class="amts-preview-switcher-label">Replit preview only &middot; not part of Shopify integration</span>
+  <span class="amts-preview-switcher-links">
+    <a class="amts-preview-switcher-link amts-is-current" href="../testimonial-submission/index.html" aria-current="page">Submission page</a>
+    <a class="amts-preview-switcher-link" href="../testimonial-management/index.html">Management dashboard</a>
+  </span>
+</nav>
+<!-- END PREVIEW-ONLY SWITCHER -->
+
+<div class="amts-root" id="amts-root">
+
+  <div class="amts-demo-banner" role="note">
+    <strong class="amts-demo-banner-tag">Demo Mode</strong>
+    <span>This form is not connected to the Aviators Market submission service or any persistent storage. Nothing you enter is sent, saved, or published.</span>
+  </div>
+
+  <section class="amts-hero" aria-labelledby="amts-hero-title">
+    <div class="amts-hero-inner">
+      <nav class="amts-breadcrumb" aria-label="Breadcrumb">
+        <ol class="amts-breadcrumb-list">
+          <li class="amts-breadcrumb-item"><a class="amts-breadcrumb-link" href="https://aviatorsmarket.com/">Home</a></li>
+          <li class="amts-breadcrumb-item"><a class="amts-breadcrumb-link" href="https://aviatorsmarket.com/pages/testimonials">Testimonials</a></li>
+          <li class="amts-breadcrumb-item"><span aria-current="page">Share Your Experience</span></li>
+        </ol>
+      </nav>
+      <p class="amts-eyebrow">AVIATORS MARKET SUCCESS STORIES</p>
+      <h1 class="amts-hero-title" id="amts-hero-title">Share Your Aviators Market Experience</h1>
+      <p class="amts-hero-lead">Every aviation transaction has a story. Whether you sold an aircraft, found the right buyer, connected with an aviation business, or discovered the parts and equipment you needed, we'd love to hear about your experience.</p>
+      <p class="amts-hero-lead">Your story could help other aviation buyers, sellers, and professionals discover what Aviators Market can do for them.</p>
+    </div>
+  </section>
+
+  <div class="amts-layout">
+    <main class="amts-main">
+
+      <section class="amts-card amts-form-card" id="amts-form-card" aria-labelledby="amts-form-title">
+        <header class="amts-form-header">
+          <h2 class="amts-form-title" id="amts-form-title">Tell Us About Your Experience</h2>
+          <p class="amts-form-intro">We appreciate you taking a few minutes to share your experience. Your feedback helps us improve Aviators Market and helps others learn about the opportunities available through our marketplace.</p>
+          <ol class="amts-steps" aria-label="Form sections">
+            <li class="amts-step"><span class="amts-step-num">1</span>About you</li>
+            <li class="amts-step"><span class="amts-step-num">2</span>Your experience</li>
+            <li class="amts-step"><span class="amts-step-num">3</span>Photos</li>
+            <li class="amts-step"><span class="amts-step-num">4</span>Display &amp; consent</li>
+          </ol>
+          <p class="amts-required-note">Fields marked <span class="amts-req" aria-hidden="true">*</span><span class="amts-sr-only">with an asterisk</span> are required.</p>
+        </header>
+
+        <div class="amts-error-summary" id="amts-error-summary" role="alert" tabindex="-1" hidden>
+          <h3 class="amts-error-summary-title">Please correct the following before continuing</h3>
+          <ul class="amts-error-summary-list" id="amts-error-summary-list"></ul>
+        </div>
+
+        <div class="amts-demo-result" id="amts-demo-result" role="status" tabindex="-1" hidden>
+          <strong class="amts-demo-result-tag">Demo Mode</strong>
+          <p class="amts-demo-result-text">Demo Mode: Your testimonial has been validated but has not been submitted. The Aviators Market submission service must be connected before this form can accept testimonials.</p>
+        </div>
+
+        <form class="amts-form" id="amts-form" novalidate>
+
+          <!-- STEP 1 -->
+          <fieldset class="amts-section">
+            <legend class="amts-section-legend"><span class="amts-section-num">01</span> About you</legend>
+
+            <div class="amts-grid amts-grid-2">
+              <div class="amts-field" data-amts-field="amts-full-name">
+                <label class="amts-label" for="amts-full-name">Full Name <span class="amts-req" aria-hidden="true">*</span></label>
+                <input class="amts-input" id="amts-full-name" name="fullName" type="text" autocomplete="name" placeholder="Your full name" required aria-required="true" aria-describedby="amts-full-name-error" maxlength="120">
+                <p class="amts-error" id="amts-full-name-error" hidden></p>
+              </div>
+
+              <div class="amts-field" data-amts-field="amts-email">
+                <label class="amts-label" for="amts-email">Email Address <span class="amts-req" aria-hidden="true">*</span></label>
+                <input class="amts-input" id="amts-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required aria-required="true" aria-describedby="amts-email-hint amts-email-error" maxlength="254">
+                <p class="amts-hint" id="amts-email-hint">Used only for verification and follow-up. Your email address will never be publicly displayed.</p>
+                <p class="amts-error" id="amts-email-error" hidden></p>
+              </div>
+
+              <div class="amts-field" data-amts-field="amts-company">
+                <label class="amts-label" for="amts-company">Company or Business Name <span class="amts-optional" id="amts-company-optional">(optional)</span><span class="amts-req" id="amts-company-req" aria-hidden="true" hidden>*</span></label>
+                <input class="amts-input" id="amts-company" name="company" type="text" autocomplete="organization" placeholder="Company or organization name" aria-describedby="amts-company-hint amts-company-error" maxlength="160">
+                <p class="amts-hint" id="amts-company-hint">Required only if you choose to display your company name.</p>
+                <p class="amts-error" id="amts-company-error" hidden></p>
+              </div>
+
+              <div class="amts-field" data-amts-field="amts-role">
+                <label class="amts-label" for="amts-role">Your Role <span class="amts-req" aria-hidden="true">*</span></label>
+                <div class="amts-select-wrap">
+                  <select class="amts-select" id="amts-role" name="role" required aria-required="true" aria-describedby="amts-role-error">
+                    <option value="">Select your role</option>
+                    <option>Aircraft Owner / Seller</option>
+                    <option>Aircraft Buyer</option>
+                    <option>Aircraft Broker / Dealer</option>
+                    <option>Aviation Parts or Equipment Seller</option>
+                    <option>Avionics Supplier</option>
+                    <option>Engine or Component Supplier</option>
+                    <option>Aviation Service Provider</option>
+                    <option>UAS / Drone Professional</option>
+                    <option>Aviation Business</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <p class="amts-error" id="amts-role-error" hidden></p>
+              </div>
+            </div>
+
+            <fieldset class="amts-subfieldset">
+              <legend class="amts-label">Location <span class="amts-optional">(optional)</span></legend>
+              <div class="amts-grid amts-grid-3">
+                <div class="amts-field">
+                  <label class="amts-label amts-label-small" for="amts-city">City</label>
+                  <input class="amts-input" id="amts-city" name="city" type="text" autocomplete="address-level2" maxlength="100">
+                </div>
+                <div class="amts-field">
+                  <label class="amts-label amts-label-small" for="amts-region">State or Province</label>
+                  <input class="amts-input" id="amts-region" name="region" type="text" autocomplete="address-level1" maxlength="100">
+                </div>
+                <div class="amts-field">
+                  <label class="amts-label amts-label-small" for="amts-country">Country</label>
+                  <input class="amts-input" id="amts-country" name="country" type="text" autocomplete="country-name" maxlength="100">
+                </div>
+              </div>
+            </fieldset>
+          </fieldset>
+
+          <!-- STEP 2 -->
+          <fieldset class="amts-section">
+            <legend class="amts-section-legend"><span class="amts-section-num">02</span> Your experience</legend>
+
+            <div class="amts-field" data-amts-field="amts-category">
+              <label class="amts-label" for="amts-category">What Did You Use Aviators Market For? <span class="amts-req" aria-hidden="true">*</span></label>
+              <div class="amts-select-wrap">
+                <select class="amts-select" id="amts-category" name="category" required aria-required="true" aria-describedby="amts-category-error">
+                  <option value="">Select an option</option>
+                  <option>Selling an Aircraft</option>
+                  <option>Buying an Aircraft</option>
+                  <option>Selling Parts or Equipment</option>
+                  <option>Buying Parts or Equipment</option>
+                  <option>Advertising Aviation Products or Services</option>
+                  <option>Generating Buyer Leads</option>
+                  <option>Promoting My Aviation Business</option>
+                  <option>Using LeadVision</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <p class="amts-error" id="amts-category-error" hidden></p>
+            </div>
+
+            <fieldset class="amts-field amts-rating-field" id="amts-rating-group" data-amts-field="amts-rating-1" aria-describedby="amts-rating-desc amts-rating-error">
+              <legend class="amts-label">Overall Experience Rating <span class="amts-req" aria-hidden="true">*</span></legend>
+              <div class="amts-rating" id="amts-rating">
+                <input class="amts-rating-input" type="radio" id="amts-rating-1" name="rating" value="1" required>
+                <label class="amts-rating-star" for="amts-rating-1"><span class="amts-sr-only">1 star, Poor</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></svg></label>
+                <input class="amts-rating-input" type="radio" id="amts-rating-2" name="rating" value="2">
+                <label class="amts-rating-star" for="amts-rating-2"><span class="amts-sr-only">2 stars, Fair</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></svg></label>
+                <input class="amts-rating-input" type="radio" id="amts-rating-3" name="rating" value="3">
+                <label class="amts-rating-star" for="amts-rating-3"><span class="amts-sr-only">3 stars, Good</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></svg></label>
+                <input class="amts-rating-input" type="radio" id="amts-rating-4" name="rating" value="4">
+                <label class="amts-rating-star" for="amts-rating-4"><span class="amts-sr-only">4 stars, Very Good</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></svg></label>
+                <input class="amts-rating-input" type="radio" id="amts-rating-5" name="rating" value="5">
+                <label class="amts-rating-star" for="amts-rating-5"><span class="amts-sr-only">5 stars, Excellent</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z"/></svg></label>
+                <span class="amts-rating-desc" id="amts-rating-desc" aria-live="polite">No rating selected</span>
+              </div>
+              <p class="amts-error" id="amts-rating-error" hidden></p>
+            </fieldset>
+
+            <div class="amts-field" data-amts-field="amts-story">
+              <label class="amts-label" for="amts-story">Tell Us Your Story <span class="amts-req" aria-hidden="true">*</span></label>
+              <textarea class="amts-textarea" id="amts-story" name="story" rows="8" required aria-required="true" maxlength="2000" aria-describedby="amts-story-counter amts-story-error" placeholder="Tell us about your experience with Aviators Market. What were you trying to accomplish? How did Aviators Market help? What was the outcome?"></textarea>
+              <div class="amts-counter-row">
+                <span class="amts-hint">Minimum 30 characters.</span>
+                <span class="amts-counter" id="amts-story-counter" aria-live="polite"><span id="amts-story-count">0</span> / 2,000</span>
+              </div>
+              <div class="amts-counter-bar" aria-hidden="true"><span class="amts-counter-fill" id="amts-story-fill"></span></div>
+              <p class="amts-error" id="amts-story-error" hidden></p>
+            </div>
+
+            <div class="amts-grid amts-grid-2">
+              <div class="amts-field">
+                <label class="amts-label" for="amts-result">What Was the Result? <span class="amts-optional">(optional)</span></label>
+                <div class="amts-select-wrap">
+                  <select class="amts-select" id="amts-result" name="result">
+                    <option value="">Select an outcome</option>
+                    <option>Successfully Sold My Aircraft</option>
+                    <option>Successfully Purchased an Aircraft</option>
+                    <option>Sold Parts or Equipment</option>
+                    <option>Found Parts or Equipment</option>
+                    <option>Received Qualified Buyer Inquiries</option>
+                    <option>Increased Business Exposure</option>
+                    <option>Connected With Aviation Professionals</option>
+                    <option>Still Working Toward My Goal</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="amts-field">
+                <label class="amts-label" for="amts-tenure">How Long Have You Used Aviators Market? <span class="amts-optional">(optional)</span></label>
+                <div class="amts-select-wrap">
+                  <select class="amts-select" id="amts-tenure" name="tenure">
+                    <option value="">Select a timeframe</option>
+                    <option>First-Time User</option>
+                    <option>Less Than 6 Months</option>
+                    <option>6–12 Months</option>
+                    <option>1–3 Years</option>
+                    <option>3–5 Years</option>
+                    <option>More Than 5 Years</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="amts-field">
+              <label class="amts-label" for="amts-details">Aircraft, Product, or Service Details <span class="amts-optional">(optional)</span></label>
+              <input class="amts-input" id="amts-details" name="details" type="text" maxlength="200" placeholder="Example: 2009 Cessna 182 Skylane, avionics equipment, aircraft brokerage services.">
+            </div>
+          </fieldset>
+
+          <!-- STEP 3 -->
+          <fieldset class="amts-section">
+            <legend class="amts-section-legend"><span class="amts-section-num">03</span> Add a Photo to Your Story <span class="amts-optional">(optional)</span></legend>
+            <p class="amts-section-intro">Have a photo of your aircraft, aviation equipment, or business? You're welcome to include it with your testimonial.</p>
+
+            <div class="amts-dropzone" id="amts-dropzone" data-amts-field="amts-photo-browse">
+              <svg class="amts-dropzone-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="6" y="10" width="36" height="28" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="17" cy="20" r="3.4" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M8 34l10-9 7 6 6-5 9 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+              <p class="amts-dropzone-title">Drag and drop photos here</p>
+              <p class="amts-dropzone-sub">or</p>
+              <button class="amts-button amts-button-secondary" type="button" id="amts-photo-browse" aria-describedby="amts-photo-rules amts-photo-error">Browse Files</button>
+              <input class="amts-sr-only" type="file" id="amts-photo-input" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple tabindex="-1" aria-hidden="true">
+              <p class="amts-dropzone-rules" id="amts-photo-rules">JPG, PNG, or WebP &middot; up to 5 MB each &middot; maximum three images</p>
+            </div>
+            <p class="amts-error" id="amts-photo-error" role="alert" hidden></p>
+            <ul class="amts-photo-list" id="amts-photo-list" aria-label="Selected photos"></ul>
+            <p class="amts-privacy-note">Photographs remain private until your testimonial has been approved and published. In this demo, selected files stay in your browser and are never uploaded.</p>
+          </fieldset>
+
+          <!-- STEP 4 -->
+          <fieldset class="amts-section">
+            <legend class="amts-section-legend"><span class="amts-section-num">04</span> How May We Display Your Testimonial?</legend>
+
+            <fieldset class="amts-field" id="amts-display-group" data-amts-field="amts-display-full" aria-describedby="amts-display-error">
+              <legend class="amts-label">Display preference <span class="amts-req" aria-hidden="true">*</span></legend>
+              <div class="amts-choice-grid">
+                <label class="amts-choice"><input class="amts-choice-input" type="radio" name="display" id="amts-display-full" value="Display My Full Name" required><span class="amts-choice-box"><span class="amts-choice-title">Display My Full Name</span><span class="amts-choice-example" id="amts-display-full-ex">e.g. Your full name</span></span></label>
+                <label class="amts-choice"><input class="amts-choice-input" type="radio" name="display" id="amts-display-initial" value="Display My First Name and Last Initial"><span class="amts-choice-box"><span class="amts-choice-title">Display My First Name and Last Initial</span><span class="amts-choice-example" id="amts-display-initial-ex">e.g. First name and last initial</span></span></label>
+                <label class="amts-choice"><input class="amts-choice-input" type="radio" name="display" id="amts-display-first" value="Display My First Name Only"><span class="amts-choice-box"><span class="amts-choice-title">Display My First Name Only</span><span class="amts-choice-example" id="amts-display-first-ex">e.g. First name</span></span></label>
+                <label class="amts-choice"><input class="amts-choice-input" type="radio" name="display" id="amts-display-company" value="Display My Company Name"><span class="amts-choice-box"><span class="amts-choice-title">Display My Company Name</span><span class="amts-choice-example" id="amts-display-company-ex">Requires a company name</span></span></label>
+              </div>
+              <p class="amts-error" id="amts-display-error" hidden></p>
+            </fieldset>
+
+            <div class="amts-check-list">
+              <label class="amts-check"><input class="amts-check-input" type="checkbox" id="amts-contact-before" name="contactBeforePublishing"><span class="amts-check-box" aria-hidden="true"></span><span class="amts-check-text">Please contact me before publishing my testimonial.</span></label>
+              <label class="amts-check"><input class="amts-check-input" type="checkbox" id="amts-followup" name="followUp"><span class="amts-check-box" aria-hidden="true"></span><span class="amts-check-text">Please contact me if Aviators Market would like additional details about my experience.</span></label>
+            </div>
+
+            <h3 class="amts-subheading">Consent and Publication Authorization</h3>
+            <div class="amts-consent">
+              <div class="amts-field" data-amts-field="amts-consent">
+                <label class="amts-check amts-check-consent"><input class="amts-check-input" type="checkbox" id="amts-consent" name="consent" required aria-required="true" aria-describedby="amts-consent-error"><span class="amts-check-box" aria-hidden="true"></span><span class="amts-check-text">I confirm that this testimonial reflects my genuine experience with Aviators Market. I authorize Aviators Market to review and, if approved, publish my testimonial and selected display information on its website and related marketing channels. I understand that I may contact Aviators Market to request changes or removal. <span class="amts-req" aria-hidden="true">*</span></span></label>
+                <p class="amts-error" id="amts-consent-error" hidden></p>
+              </div>
+              <div class="amts-field" id="amts-photo-consent-wrap" data-amts-field="amts-photo-consent" hidden>
+                <label class="amts-check amts-check-consent"><input class="amts-check-input" type="checkbox" id="amts-photo-consent" name="photoConsent" aria-describedby="amts-photo-consent-error"><span class="amts-check-box" aria-hidden="true"></span><span class="amts-check-text">I confirm that I own or have permission to submit these photographs and authorize Aviators Market to use them in connection with my testimonial. <span class="amts-req" aria-hidden="true">*</span></span></label>
+                <p class="amts-error" id="amts-photo-consent-error" hidden></p>
+              </div>
+              <p class="amts-policy-links">Please review our <a class="amts-link" href="https://aviatorsmarket.com/pages/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a> and <a class="amts-link" href="https://aviatorsmarket.com/pages/terms-of-service" target="_blank" rel="noopener">Terms of Service</a>. No testimonial is published automatically; every submission is reviewed privately first.</p>
+            </div>
+          </fieldset>
+
+          <div class="amts-submit-row">
+            <button class="amts-button amts-submit-button" type="submit" id="amts-submit">
+              <span class="amts-spinner" aria-hidden="true"></span>
+              <span class="amts-submit-label" id="amts-submit-label">Submit My Testimonial</span>
+            </button>
+            <p class="amts-submit-note">Demo Mode: submitting only validates your entries in this browser.</p>
+          </div>
+        </form>
+      </section>
+
+      <!-- FUTURE PRODUCTION CONFIRMATION STATE: activate only after the real submission service confirms receipt. Never shown in demo mode. -->
+      <section class="amts-card amts-confirmation" id="amts-confirmation" aria-labelledby="amts-confirmation-title" tabindex="-1" hidden>
+        <div class="amts-confirmation-mark" aria-hidden="true"><svg viewBox="0 0 48 48" focusable="false"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 25l7 7 14-15" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h2 class="amts-confirmation-title" id="amts-confirmation-title">Thank You for Sharing Your Story!</h2>
+        <p class="amts-confirmation-text">We appreciate you taking the time to share your experience with Aviators Market.</p>
+        <p class="amts-confirmation-text">Your testimonial has been received and will be reviewed by our team before being considered for publication.</p>
+        <p class="amts-confirmation-text">Thank you for being part of the Aviators Market aviation community!</p>
+        <div class="amts-confirmation-actions">
+          <a class="amts-button amts-submit-button" href="https://aviatorsmarket.com/pages/testimonials">Read Customer Testimonials</a>
+          <a class="amts-button amts-button-secondary" href="https://aviatorsmarket.com">Explore Aviators Market</a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="amts-aside" aria-labelledby="amts-aside-title">
+      <div class="amts-card amts-aside-card">
+        <p class="amts-eyebrow">WHY IT MATTERS</p>
+        <h2 class="amts-aside-title" id="amts-aside-title">Your Story Matters</h2>
+        <ul class="amts-benefits">
+          <li class="amts-benefit">
+            <span class="amts-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M2.5 13.5l7-1.5 5-8.5 2 .6-2 8.2 6.3-1.3c1.2-.2 1.8 1.4.7 2l-6.8 2.6-3.3 5.2-1.7-.4.9-4.2-6.6.8z" fill="currentColor"/></svg></span>
+            <div><h3 class="amts-benefit-title">Help Other Aviation Professionals</h3><p class="amts-benefit-text">Your experience can help aircraft owners, brokers, and aviation businesses make informed decisions.</p></div>
+          </li>
+          <li class="amts-benefit">
+            <span class="amts-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5L2.6 9.4l6.5-.9z" fill="currentColor"/></svg></span>
+            <div><h3 class="amts-benefit-title">Celebrate Aviation Success</h3><p class="amts-benefit-text">Whether it was a successful sale, a new business connection, or a great customer experience, we'd love to hear about it.</p></div>
+          </li>
+          <li class="amts-benefit">
+            <span class="amts-benefit-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="6" cy="7" r="2.6" fill="currentColor"/><circle cx="18" cy="7" r="2.6" fill="currentColor"/><circle cx="12" cy="17" r="2.6" fill="currentColor"/><path d="M6 7l6 10 6-10z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+            <div><h3 class="amts-benefit-title">Build a Stronger Aviation Community</h3><p class="amts-benefit-text">Sharing real experiences helps connect people throughout the aviation marketplace.</p></div>
+          </li>
+        </ul>
+        <a class="amts-aside-link" href="https://aviatorsmarket.com/pages/testimonials">See What Others Are Saying <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="amts-card amts-process-card">
+        <h2 class="amts-process-title">What happens next</h2>
+        <ol class="amts-process">
+          <li class="amts-process-item"><strong>Private review.</strong> Every story is read by our team before anything is shared.</li>
+          <li class="amts-process-item"><strong>Approval.</strong> Approved stories are prepared using your display preference.</li>
+          <li class="amts-process-item"><strong>Separate publication.</strong> Only an explicit publishing step makes a story public.</li>
+        </ol>
+        <p class="amts-process-note">Your email address is never shown publicly.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<script src="testimonial-submission.js"></script>
+</body>
+</html>

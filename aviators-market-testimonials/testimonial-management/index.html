@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Preview testimonial review and publication controls with fictional sample data. No authentication, storage or live publishing is connected.">
+  <meta property="og:title" content="Testimonial Management | Aviators Market Demo">
+  <meta property="og:description" content="A fictional testimonial review dashboard. Demonstration only, not a secured production administrator area.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:,">
+  <title>Testimonial Management | Aviators Market (Demo, Sample Data)</title>
+  <link rel="stylesheet" href="testimonial-management.css">
+</head>
+<body class="amtm-preview-body">
+
+<!-- PREVIEW-ONLY SWITCHER: exclude from Shopify / production hosting -->
+<nav class="amtm-preview-switcher" aria-label="Preview-only demo switcher">
+  <span class="amtm-preview-switcher-label">Replit preview only &middot; not part of Shopify integration</span>
+  <span class="amtm-preview-switcher-links">
+    <a class="amtm-preview-switcher-link" href="../testimonial-submission/index.html">Submission page</a>
+    <a class="amtm-preview-switcher-link amtm-is-current" href="../testimonial-management/index.html" aria-current="page">Management dashboard</a>
+  </span>
+</nav>
+<!-- END PREVIEW-ONLY SWITCHER -->
+
+<div class="amtm-root" id="amtm-root">
+
+  <div class="amtm-demo-banner" role="note">
+    <strong class="amtm-demo-tag">Demo Mode</strong>
+    <span>Fictional sample data held only in this browser tab. Actions are simulated, are not saved, and do not affect the public website. No authentication is active; production access must be enforced server-side.</span>
+  </div>
+
+  <header class="amtm-header">
+    <div class="amtm-header-inner">
+      <div>
+        <p class="amtm-eyebrow">AVIATORS MARKET &middot; PRIVATE ADMINISTRATION</p>
+        <h1 class="amtm-title">Testimonial Management</h1>
+        <p class="amtm-lead">Review, approve, and manage customer testimonials submitted to Aviators Market.</p>
+      </div>
+      <div class="amtm-header-meta">
+        <span class="amtm-pill amtm-pill-sample">Sample data</span>
+        <button class="amtm-button amtm-button-ghost-light" type="button" id="amtm-reset">Reset demo data</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="amtm-shell">
+    <section class="amtm-summary" aria-labelledby="amtm-summary-title">
+      <h2 class="amtm-sr-only" id="amtm-summary-title">Summary (sample data)</h2>
+      <div class="amtm-summary-grid" id="amtm-summary-grid"></div>
+      <p class="amtm-summary-note">All counts are sample data from fictional records.</p>
+    </section>
+
+    <section class="amtm-queue-wrap" aria-labelledby="amtm-queue-title">
+      <div class="amtm-toolbar">
+        <h2 class="amtm-queue-title" id="amtm-queue-title">Review Queue</h2>
+        <div class="amtm-filters" role="radiogroup" aria-label="Filter by status" id="amtm-filters"></div>
+        <div class="amtm-toolbar-row">
+          <div class="amtm-search">
+            <label class="amtm-sr-only" for="amtm-search">Search testimonials</label>
+            <svg class="amtm-search-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input class="amtm-input amtm-search-input" type="search" id="amtm-search" placeholder="Search name, company, submission ID or text" autocomplete="off">
+          </div>
+          <div class="amtm-sort">
+            <label class="amtm-sort-label" for="amtm-sort">Sort</label>
+            <select class="amtm-select" id="amtm-sort">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="rating-high">Highest rating</option>
+              <option value="rating-low">Lowest rating</option>
+              <option value="name">Customer name A&ndash;Z</option>
+            </select>
+          </div>
+        </div>
+        <p class="amtm-result-count" id="amtm-result-count" aria-live="polite"></p>
+      </div>
+
+      <div class="amtm-split">
+        <div class="amtm-queue" id="amtm-queue">
+          <table class="amtm-table" id="amtm-table">
+            <caption class="amtm-sr-only">Submitted testimonials (sample data)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Submitted</th>
+                <th scope="col">Customer</th>
+                <th scope="col">Company</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Experience</th>
+                <th scope="col">Status</th>
+                <th scope="col"><span class="amtm-sr-only">Action</span></th>
+              </tr>
+            </thead>
+            <tbody id="amtm-tbody"></tbody>
+          </table>
+          <div class="amtm-empty" id="amtm-empty" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="8" y="10" width="32" height="28" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M8 20h32" stroke="currentColor" stroke-width="2.4"/></svg>
+            <p class="amtm-empty-title">No testimonials match</p>
+            <p class="amtm-empty-text">Try another status filter or clear the search.</p>
+            <button class="amtm-button amtm-button-secondary" type="button" id="amtm-clear">Clear filters</button>
+          </div>
+        </div>
+
+        <aside class="amtm-detail" id="amtm-detail" aria-label="Testimonial detail" tabindex="-1">
+          <div class="amtm-detail-placeholder" id="amtm-detail-placeholder">
+            <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 12h28M10 22h28M10 32h18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+            <p class="amtm-empty-title">Select a testimonial</p>
+            <p class="amtm-empty-text">Choose Review on any submission to see the full record, consent details and available actions.</p>
+          </div>
+          <div class="amtm-detail-body" id="amtm-detail-body" hidden></div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <dialog class="amtm-dialog" id="amtm-dialog" aria-labelledby="amtm-dialog-title">
+    <form class="amtm-dialog-form" id="amtm-dialog-form" method="dialog" novalidate>
+      <div class="amtm-dialog-head">
+        <p class="amtm-dialog-tag">Demo Mode &middot; simulated action</p>
+        <h2 class="amtm-dialog-title" id="amtm-dialog-title"></h2>
+      </div>
+      <div class="amtm-dialog-content" id="amtm-dialog-content"></div>
+      <p class="amtm-dialog-error" id="amtm-dialog-error" role="alert" hidden></p>
+      <div class="amtm-dialog-actions">
+        <button class="amtm-button amtm-button-secondary" type="button" id="amtm-dialog-cancel">Cancel</button>
+        <button class="amtm-button amtm-button-primary" type="submit" id="amtm-dialog-confirm">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="amtm-toast" id="amtm-toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="testimonial-management.js"></script>
+</body>
+</html>
